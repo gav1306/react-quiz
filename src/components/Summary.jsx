@@ -43,9 +43,9 @@ const Summary = ({ userAnswers }) => {
           if (answer === null) {
             cssClass += " skipped";
           } else if (answer === QUESTIONS[index].answers[0]) {
-            cssClass = " correct";
+            cssClass += " correct";
           } else {
-            cssClass = " wrong";
+            cssClass += " wrong";
           }
 
           return (
